@@ -2,6 +2,7 @@ package com.product.api.service;
 
 import java.util.List;
 
+import com.product.api.dto.ApiResponse;
 import com.product.api.entity.Category;
 
 /**
@@ -28,19 +29,19 @@ public interface SvcCategory {
 	/**
 	 * Crea una categoria
 	 */
-	public String createCategory(Category category);
+	public ApiResponse createCategory(Category category);
 	
 	
 	/**
 	 * Actualiza una categoria
 	 */
-	public String updateCategory(Integer category_id, Category category);
+	public ApiResponse updateCategory(Integer category_id, Category category);
 	
 	
 	/**
 	 * Elimina una categoria
 	 */
-	public String deleteCategory(Integer category_id);
+	public ApiResponse deleteCategory(Integer category_id);
 	
 	
 	
