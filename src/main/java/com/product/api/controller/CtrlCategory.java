@@ -58,7 +58,7 @@ public class CtrlCategory {
 		if(bindingResult.hasErrors()) 
 			throw new ApiException(HttpStatus.BAD_REQUEST, bindingResult.getAllErrors().get(0).getDefaultMessage());
 		
-		return new ResponseEntity<>(svc.createCategory(category), HttpStatus.CREATED);
+		return new ResponseEntity<>(svc.createCategory(category), HttpStatus.OK);
 		
 	}
 	
